@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  CoreData
+//  CoreDataDemo
 //
 //  Created by Gabriel Zempoalteca Garrido on 10/04/22.
 //

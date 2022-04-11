@@ -1,6 +1,6 @@
 //
-//  CoreDataApp.swift
-//  CoreData
+//  CoreDataDemoApp.swift
+//  CoreDataDemo
 //
 //  Created by Gabriel Zempoalteca Garrido on 10/04/22.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct CoreDataApp: App {
+struct CoreDataDemoApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
