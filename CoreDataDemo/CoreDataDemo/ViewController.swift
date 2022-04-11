@@ -51,6 +51,21 @@ class ViewController: UIViewController {
         }
     }
 
+    func relationsShipDemo() {
+        // Create a family
+        let family = Family(context: context)
+        family.name = "Abc Family"
+
+        // Create a person
+        let person = Person(context: context)
+        person.name = "Maggie"
+//        person.family = family  // Specify the relationship
+        family.addToPeople(person)
+
+        // Save the context
+        try! context.save()
+    }
+
     // MARK: - Actions
 
     @IBAction func addTapped(_ sender: Any) {

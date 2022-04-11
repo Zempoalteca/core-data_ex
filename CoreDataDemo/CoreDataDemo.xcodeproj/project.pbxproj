@@ -14,8 +14,10 @@
 		E89D98612803BD0500592CDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E89D98602803BD0500592CDB /* Assets.xcassets */; };
 		E89D98642803BD0500592CDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E89D98622803BD0500592CDB /* LaunchScreen.storyboard */; };
 		E89D986D2803BE6500592CDB /* CoreDataDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E89D986B2803BE6500592CDB /* CoreDataDemo.xcdatamodeld */; };
-		E89D987E2803C42400592CDB /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89D987C2803C42400592CDB /* Person+CoreDataClass.swift */; };
-		E89D987F2803C42400592CDB /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89D987D2803C42400592CDB /* Person+CoreDataProperties.swift */; };
+		E89D988D2803E02600592CDB /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89D98892803E02600592CDB /* Person+CoreDataClass.swift */; };
+		E89D988E2803E02600592CDB /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89D988A2803E02600592CDB /* Person+CoreDataProperties.swift */; };
+		E89D988F2803E02600592CDB /* Family+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89D988B2803E02600592CDB /* Family+CoreDataClass.swift */; };
+		E89D98902803E02600592CDB /* Family+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89D988C2803E02600592CDB /* Family+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +30,10 @@
 		E89D98632803BD0500592CDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E89D98652803BD0500592CDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E89D986C2803BE6500592CDB /* CoreDataDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataDemo.xcdatamodel; sourceTree = "<group>"; };
-		E89D987C2803C42400592CDB /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataClass.swift"; sourceTree = "<group>"; };
-		E89D987D2803C42400592CDB /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E89D98892803E02600592CDB /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E89D988A2803E02600592CDB /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E89D988B2803E02600592CDB /* Family+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Family+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E89D988C2803E02600592CDB /* Family+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Family+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,7 @@
 		E89D98722803C23B00592CDB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E89D98802803DFAF00592CDB /* Family */,
 				E89D98732803C24500592CDB /* Person */,
 			);
 			path = Models;
@@ -86,10 +91,19 @@
 		E89D98732803C24500592CDB /* Person */ = {
 			isa = PBXGroup;
 			children = (
-				E89D987C2803C42400592CDB /* Person+CoreDataClass.swift */,
-				E89D987D2803C42400592CDB /* Person+CoreDataProperties.swift */,
+				E89D98892803E02600592CDB /* Person+CoreDataClass.swift */,
+				E89D988A2803E02600592CDB /* Person+CoreDataProperties.swift */,
 			);
 			name = Person;
+			sourceTree = "<group>";
+		};
+		E89D98802803DFAF00592CDB /* Family */ = {
+			isa = PBXGroup;
+			children = (
+				E89D988B2803E02600592CDB /* Family+CoreDataClass.swift */,
+				E89D988C2803E02600592CDB /* Family+CoreDataProperties.swift */,
+			);
+			name = Family;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,10 +179,12 @@
 			files = (
 				E89D985C2803BD0300592CDB /* ViewController.swift in Sources */,
 				E89D986D2803BE6500592CDB /* CoreDataDemo.xcdatamodeld in Sources */,
-				E89D987F2803C42400592CDB /* Person+CoreDataProperties.swift in Sources */,
-				E89D987E2803C42400592CDB /* Person+CoreDataClass.swift in Sources */,
+				E89D988F2803E02600592CDB /* Family+CoreDataClass.swift in Sources */,
+				E89D988E2803E02600592CDB /* Person+CoreDataProperties.swift in Sources */,
+				E89D988D2803E02600592CDB /* Person+CoreDataClass.swift in Sources */,
 				E89D98582803BD0300592CDB /* AppDelegate.swift in Sources */,
 				E89D985A2803BD0300592CDB /* SceneDelegate.swift in Sources */,
+				E89D98902803E02600592CDB /* Family+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
